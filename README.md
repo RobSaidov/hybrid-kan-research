@@ -179,23 +179,36 @@ This is controlled via `dedup_poly_deg01=True` and `keep01_family='legendre'`.
 
 ## Experimental Results
 
+*Experiments conducted on NVIDIA GeForce RTX 3060 Laptop GPU with PyTorch 2.5.1*
+
 ### Classification Performance
 
 | Model | MNIST | CIFAR-10 |
 |-------|-------|----------|
-| ReLU Only | 98.2% | 75.4% |
-| Fourier + ReLU | 98.5% | 77.8% |
-| **HybridKAN (All)** | **99.1%** | **82.3%** |
+| ReLU Only | 99.50% | 86.15% |
+| HybridKAN (All) | 99.44% | 85.63% |
+| All (No Residual) | 99.36% | 85.17% |
 
-### Ablation Study (Leave-One-Out)
+### Ablation Study (Leave-One-Out on CIFAR-10)
 
-| Excluded Branch | CIFAR-10 Accuracy | Δ from All |
-|-----------------|-------------------|------------|
-| None (All) | 82.3% | — |
-| - Gabor | 81.8% | -0.5% |
-| - Legendre | 81.2% | -1.1% |
-| - Fourier | 80.9% | -1.4% |
-| - ReLU | 81.5% | -0.8% |
+| Excluded Branch | Accuracy | Δ from All |
+|-----------------|----------|------------|
+| None (All) | 85.63% | — |
+| - Gabor | 85.76% | +0.13% |
+| - Legendre | 85.56% | -0.07% |
+| - Chebyshev | 85.37% | -0.26% |
+| - Hermite | 85.44% | -0.19% |
+| - Fourier | 85.39% | -0.24% |
+| - ReLU | 85.50% | -0.13% |
+
+### Key Findings
+
+1. **Residual connections provide +0.46% improvement** (85.17% → 85.63%)
+2. **Most impactful branches**: Chebyshev (-0.26%) and Fourier (-0.24%)
+3. **Gabor may be redundant** for this task (+0.13% when removed)
+4. **Learned gate weights** show layer-specific specialization:
+   - Early layers: Gabor dominates for feature detection
+   - Later layers: Balanced mix with ReLU and polynomials
 
 ## Visualization
 

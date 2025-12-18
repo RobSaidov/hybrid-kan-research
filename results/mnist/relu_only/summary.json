@@ -1,0 +1,60 @@
+{
+  "dataset": "mnist",
+  "variant_name": "relu_only",
+  "branches": [
+    "relu"
+  ],
+  "use_residual": true,
+  "best_accuracy": 99.5,
+  "best_epoch": 9,
+  "total_epochs": 10,
+  "elapsed_time": 199.45574569702148,
+  "parameters": 363664,
+  "gate_summary": {
+    "initial_branch_gates": {
+      "epoch": 0,
+      "gates": {
+        "0": {
+          "relu": 0.9740769863128662
+        },
+        "1": {
+          "relu": 0.9740769863128662
+        },
+        "2": {
+          "relu": 0.9740769863128662
+        }
+      }
+    },
+    "final_branch_gates": {
+      "epoch": 10,
+      "gates": {
+        "0": {
+          "relu": 0.923352062702179
+        },
+        "1": {
+          "relu": 0.9635674953460693
+        },
+        "2": {
+          "relu": 0.9813789129257202
+        }
+      }
+    },
+    "initial_residual_gates": {
+      "epoch": 0,
+      "gates": {
+        "residual_gate_0": 0.5249791741371155,
+        "residual_gate_1": 0.5249791741371155,
+        "residual_gate_2": 0.5249791741371155
+      }
+    },
+    "final_residual_gates": {
+      "epoch": 10,
+      "gates": {
+        "residual_gate_0": 0.5829973220825195,
+        "residual_gate_1": 0.5377376079559326,
+        "residual_gate_2": 0.5222272872924805
+      }
+    },
+    "num_recordings": 4
+  }
+}

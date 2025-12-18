@@ -1,0 +1,88 @@
+{
+  "dataset": "cifar10",
+  "variant_name": "all_except_fourier",
+  "branches": [
+    "gabor",
+    "legendre",
+    "chebyshev",
+    "hermite",
+    "relu"
+  ],
+  "use_residual": true,
+  "best_accuracy": 85.39,
+  "best_epoch": 96,
+  "total_epochs": 100,
+  "elapsed_time": 6565.510657310486,
+  "parameters": 1257381,
+  "gate_summary": {
+    "initial_branch_gates": {
+      "epoch": 0,
+      "gates": {
+        "0": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        },
+        "1": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        },
+        "2": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        }
+      }
+    },
+    "final_branch_gates": {
+      "epoch": 100,
+      "gates": {
+        "0": {
+          "gabor": 0.6997957825660706,
+          "legendre": 0.134931281208992,
+          "chebyshev": 0.03190388157963753,
+          "hermite": 0.12308631837368011,
+          "relu": 0.1685802936553955
+        },
+        "1": {
+          "gabor": 0.6300101280212402,
+          "legendre": 0.09806875139474869,
+          "chebyshev": 0.0655875876545906,
+          "hermite": 0.2059171050786972,
+          "relu": 1.0094009637832642
+        },
+        "2": {
+          "gabor": 0.7636902332305908,
+          "legendre": 0.6348199248313904,
+          "chebyshev": 0.7143362760543823,
+          "hermite": 0.861987292766571,
+          "relu": 0.7736138105392456
+        }
+      }
+    },
+    "initial_residual_gates": {
+      "epoch": 0,
+      "gates": {
+        "residual_gate_0": 0.5249791741371155,
+        "residual_gate_1": 0.5249791741371155,
+        "residual_gate_2": 0.5249791741371155
+      }
+    },
+    "final_residual_gates": {
+      "epoch": 100,
+      "gates": {
+        "residual_gate_0": 0.7356001138687134,
+        "residual_gate_1": 0.17557400465011597,
+        "residual_gate_2": 0.19393488764762878
+      }
+    },
+    "num_recordings": 22
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "experiment_name": "all_branches",
+  "best_accuracy": 99.44,
+  "best_epoch": 10,
+  "total_epochs": 10,
+  "total_time_seconds": 627.1198370456696,
+  "device": "cuda",
+  "amp_enabled": true,
+  "learning_rate_policy": {
+    "max_lr": 0.0008,
+    "warmup_pct": 0.45
+  },
+  "model_config": {
+    "active_branches": [
+      "gabor",
+      "legendre",
+      "chebyshev",
+      "hermite",
+      "fourier",
+      "relu"
+    ],
+    "use_residual": true,
+    "residual_every_n": 1,
+    "per_branch_norm": true,
+    "branch_gates": true,
+    "start_degrees": {
+      "legendre": 0,
+      "chebyshev": 2,
+      "hermite": 2
+    },
+    "use_cnn": true,
+    "regression": false,
+    "heteroscedastic": false,
+    "num_blocks": 3
+  },
+  "parameter_counts": {
+    "total": 1355371,
+    "trainable": 1355371,
+    "cnn": 126144,
+    "blocks": 1186910,
+    "output_head": 650
+  },
+  "gate_summary": {
+    "initial_branch_gates": {
+      "epoch": 0,
+      "gates": {
+        "0": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "fourier": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        },
+        "1": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "fourier": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        },
+        "2": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "fourier": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        }
+      }
+    },
+    "final_branch_gates": {
+      "epoch": 10,
+      "gates": {
+        "0": {
+          "gabor": 0.9953876733779907,
+          "legendre": 0.6654704809188843,
+          "chebyshev": 0.5599465370178223,
+          "hermite": 0.6564584374427795,
+          "fourier": 0.733528733253479,
+          "relu": 0.7807300090789795
+        },
+        "1": {
+          "gabor": 0.7724080681800842,
+          "legendre": 0.7161146402359009,
+          "chebyshev": 0.7296218276023865,
+          "hermite": 0.7702596187591553,
+          "fourier": 0.731225311756134,
+          "relu": 0.9504622220993042
+        },
+        "2": {
+          "gabor": 0.7854698300361633,
+          "legendre": 0.8625941872596741,
+          "chebyshev": 0.8142998218536377,
+          "hermite": 0.9186813831329346,
+          "fourier": 0.9063125252723694,
+          "relu": 0.9696592092514038
+        }
+      }
+    },
+    "initial_residual_gates": {
+      "epoch": 0,
+      "gates": {
+        "residual_gate_0": 0.5249791741371155,
+        "residual_gate_1": 0.5249791741371155,
+        "residual_gate_2": 0.5249791741371155
+      }
+    },
+    "final_residual_gates": {
+      "epoch": 10,
+      "gates": {
+        "residual_gate_0": 0.5439140796661377,
+        "residual_gate_1": 0.5073645710945129,
+        "residual_gate_2": 0.47667941451072693
+      }
+    },
+    "num_recordings": 4
+  }
+}

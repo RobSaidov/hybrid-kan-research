@@ -1,0 +1,4 @@
+dataset,variant_name,best_accuracy,parameters,elapsed_time,best_epoch,total_epochs,use_residual
+mnist,relu_only,99.5,363664,199.45574569702148,9,10,True
+mnist,all_branches,99.44,1355371,627.1236052513123,10,10,True
+mnist,all_no_residual,99.36,1314216,623.4080979824066,10,10,False

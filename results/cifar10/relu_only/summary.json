@@ -1,0 +1,60 @@
+{
+  "dataset": "cifar10",
+  "variant_name": "relu_only",
+  "branches": [
+    "relu"
+  ],
+  "use_residual": true,
+  "best_accuracy": 86.15,
+  "best_epoch": 90,
+  "total_epochs": 100,
+  "elapsed_time": 3277.3621809482574,
+  "parameters": 364240,
+  "gate_summary": {
+    "initial_branch_gates": {
+      "epoch": 0,
+      "gates": {
+        "0": {
+          "relu": 0.9740769863128662
+        },
+        "1": {
+          "relu": 0.9740769863128662
+        },
+        "2": {
+          "relu": 0.9740769863128662
+        }
+      }
+    },
+    "final_branch_gates": {
+      "epoch": 100,
+      "gates": {
+        "0": {
+          "relu": 0.3325561285018921
+        },
+        "1": {
+          "relu": 0.14652623236179352
+        },
+        "2": {
+          "relu": 0.41907185316085815
+        }
+      }
+    },
+    "initial_residual_gates": {
+      "epoch": 0,
+      "gates": {
+        "residual_gate_0": 0.5249791741371155,
+        "residual_gate_1": 0.5249791741371155,
+        "residual_gate_2": 0.5249791741371155
+      }
+    },
+    "final_residual_gates": {
+      "epoch": 100,
+      "gates": {
+        "residual_gate_0": 0.6924590468406677,
+        "residual_gate_1": 0.32238855957984924,
+        "residual_gate_2": 0.2982493042945862
+      }
+    },
+    "num_recordings": 22
+  }
+}

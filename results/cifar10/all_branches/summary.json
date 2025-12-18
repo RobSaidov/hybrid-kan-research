@@ -1,0 +1,95 @@
+{
+  "dataset": "cifar10",
+  "variant_name": "all_branches",
+  "branches": [
+    "gabor",
+    "legendre",
+    "chebyshev",
+    "hermite",
+    "fourier",
+    "relu"
+  ],
+  "use_residual": true,
+  "best_accuracy": 85.63,
+  "best_epoch": 100,
+  "total_epochs": 100,
+  "elapsed_time": 7614.86146235466,
+  "parameters": 1355947,
+  "gate_summary": {
+    "initial_branch_gates": {
+      "epoch": 0,
+      "gates": {
+        "0": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "fourier": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        },
+        "1": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "fourier": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        },
+        "2": {
+          "gabor": 0.7981388568878174,
+          "legendre": 0.9130152463912964,
+          "chebyshev": 0.9130152463912964,
+          "hermite": 0.9130152463912964,
+          "fourier": 0.9130152463912964,
+          "relu": 0.9740769863128662
+        }
+      }
+    },
+    "final_branch_gates": {
+      "epoch": 100,
+      "gates": {
+        "0": {
+          "gabor": 1.1011335849761963,
+          "legendre": 0.11103165149688721,
+          "chebyshev": 0.02811995893716812,
+          "hermite": 0.1763915866613388,
+          "fourier": 0.14403939247131348,
+          "relu": 0.2688106894493103
+        },
+        "1": {
+          "gabor": 1.0665225982666016,
+          "legendre": 0.11083077639341354,
+          "chebyshev": 0.07594217360019684,
+          "hermite": 0.326908141374588,
+          "fourier": 0.10136384516954422,
+          "relu": 0.8325850963592529
+        },
+        "2": {
+          "gabor": 0.7489477396011353,
+          "legendre": 0.6092994809150696,
+          "chebyshev": 0.6644749641418457,
+          "hermite": 0.7876800298690796,
+          "fourier": 0.653694748878479,
+          "relu": 0.8144962191581726
+        }
+      }
+    },
+    "initial_residual_gates": {
+      "epoch": 0,
+      "gates": {
+        "residual_gate_0": 0.5249791741371155,
+        "residual_gate_1": 0.5249791741371155,
+        "residual_gate_2": 0.5249791741371155
+      }
+    },
+    "final_residual_gates": {
+      "epoch": 100,
+      "gates": {
+        "residual_gate_0": 0.7636546492576599,
+        "residual_gate_1": 0.2511717677116394,
+        "residual_gate_2": 0.2691393196582794
+      }
+    },
+    "num_recordings": 22
+  }
+}
