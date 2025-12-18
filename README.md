@@ -310,9 +310,10 @@ If you find this work useful, please cite:
 
 ## Authors
 
-- **Dr. Esfandiar Bandari** - *Lead Researcher* - San Francisco Bay University
-- **Rob Saidov** - *Contributor*
+- **Dr. Esfandiar Bandari** - *Lead Researcher*
 - **Shruti Kavishwar** - *Contributor*
+- **Rob Saidov** - *Contributor*
+
 
 ## License
 
