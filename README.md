@@ -183,6 +183,10 @@ This is controlled via `dedup_poly_deg01=True` and `keep01_family='legendre'`.
 
 ### Classification Performance
 
+<p align="center">
+  <img src="figures/main_comparison.png" width="600" alt="Model Comparison">
+</p>
+
 | Model | MNIST | CIFAR-10 |
 |-------|-------|----------|
 | ReLU Only | 99.50% | 86.15% |
@@ -190,6 +194,10 @@ This is controlled via `dedup_poly_deg01=True` and `keep01_family='legendre'`.
 | All (No Residual) | 99.36% | 85.17% |
 
 ### Ablation Study (Leave-One-Out on CIFAR-10)
+
+<p align="center">
+  <img src="figures/ablation_study.png" width="700" alt="Ablation Study">
+</p>
 
 | Excluded Branch | Accuracy | Δ from All |
 |-----------------|----------|------------|
@@ -200,6 +208,30 @@ This is controlled via `dedup_poly_deg01=True` and `keep01_family='legendre'`.
 | - Hermite | 85.44% | -0.19% |
 | - Fourier | 85.39% | -0.24% |
 | - ReLU | 85.50% | -0.13% |
+
+### Branch Importance
+
+<p align="center">
+  <img src="figures/branch_importance.png" width="600" alt="Branch Importance">
+</p>
+
+### Training Dynamics
+
+<p align="center">
+  <img src="figures/training_curves.png" width="800" alt="Training Curves">
+</p>
+
+### Learned Gate Weights
+
+The network learns to specialize different branches across layers:
+
+<p align="center">
+  <img src="figures/gate_heatmap.png" width="550" alt="Gate Heatmap">
+</p>
+
+<p align="center">
+  <img src="figures/gate_evolution.png" width="700" alt="Gate Evolution">
+</p>
 
 ### Key Findings
 
