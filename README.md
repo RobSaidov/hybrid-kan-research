@@ -294,16 +294,25 @@ hybridkan/
 
 ## Citation
 
+> **Note:** This is a preliminary demonstration/preprint. The work is ongoing and not yet finalized for formal publication.
+
 If you find this work useful, please cite:
 
 ```bibtex
-@article{hybridkan2024,
+@misc{bandari2024hybridkan,
   title={HybridKAN: Hybrid Kolmogorov-Arnold Networks with Multi-Basis Activation Functions},
-  author={Rob},
-  journal={arXiv preprint},
-  year={2024}
+  author={Bandari, Esfandiar and Saidov, Rob and Kavishwar, Shruti},
+  year={2024},
+  note={Preprint - Work in Progress},
+  howpublished={\url{https://github.com/RobSaidov/hybrid-kan-research}}
 }
 ```
+
+## Authors
+
+- **Dr. Esfandiar Bandari** - *Lead Researcher* - San Francisco Bay University
+- **Rob Saidov** - *Contributor*
+- **Shruti Kavishwar** - *Contributor*
 
 ## License
 
@@ -311,6 +320,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Research supervised by Dr. Bandari (San Francisco Bay University)
+- Lead research by Dr. Esfandiar Bandari (San Francisco Bay University)
+- Implementation and experiments by Rob Saidov and Shruti Kavishwar
 - Inspired by the Kolmogorov-Arnold representation theorem
 - PyTorch team for the deep learning framework
