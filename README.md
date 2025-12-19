@@ -310,9 +310,10 @@ If you find this work useful, please cite:
 
 ## Authors
 
-- **Dr. Esfandiar Bandari** - *Lead Researcher* - San Francisco Bay University
-- **Rob Saidov** - *Contributor*
+- **Dr. Esfandiar Bandari** - *Lead Researcher*
 - **Shruti Kavishwar** - *Contributor*
+- **Rob Saidov** - *Contributor*
+
 
 ## License
 
@@ -320,7 +321,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Lead research by Dr. Esfandiar Bandari (San Francisco Bay University)
+- Lead research by Dr. Esfandiar Bandari
 - Implementation and experiments by Rob Saidov and Shruti Kavishwar
 - Inspired by the Kolmogorov-Arnold representation theorem
 - PyTorch team for the deep learning framework
