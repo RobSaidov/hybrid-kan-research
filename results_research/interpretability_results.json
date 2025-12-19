@@ -1,0 +1,167 @@
+{
+  "timestamp": "2025-12-18T21:07:04.621874",
+  "n_functions": 10,
+  "accuracy": 20.0,
+  "results": {
+    "sine": {
+      "category": "periodic",
+      "expected": "fourier",
+      "dominant": "relu",
+      "match": false,
+      "r2": 0.9999591708183289,
+      "entropy": 1.7887424532343812,
+      "avg_gates": {
+        "gabor": 0.7216726839542389,
+        "legendre": 0.8939322531223297,
+        "chebyshev": 0.8658158183097839,
+        "hermite": 0.8605490922927856,
+        "fourier": 0.8969479203224182,
+        "relu": 0.9242233633995056
+      }
+    },
+    "cosine_sum": {
+      "category": "periodic",
+      "expected": "fourier",
+      "dominant": "relu",
+      "match": false,
+      "r2": 0.9999765157699585,
+      "entropy": 1.78906266538736,
+      "avg_gates": {
+        "gabor": 0.7259337902069092,
+        "legendre": 0.8468675017356873,
+        "chebyshev": 0.8356315791606903,
+        "hermite": 0.8656509518623352,
+        "fourier": 0.8276795744895935,
+        "relu": 0.9327384531497955
+      }
+    },
+    "quadratic": {
+      "category": "polynomial",
+      "expected": "legendre",
+      "dominant": "relu",
+      "match": false,
+      "r2": 0.9999580979347229,
+      "entropy": 1.7891582954245777,
+      "avg_gates": {
+        "gabor": 0.7374820709228516,
+        "legendre": 0.8479018807411194,
+        "chebyshev": 0.8338772654533386,
+        "hermite": 0.8251473605632782,
+        "fourier": 0.8745884597301483,
+        "relu": 0.9404162168502808
+      }
+    },
+    "cubic": {
+      "category": "polynomial",
+      "expected": "legendre",
+      "dominant": "relu",
+      "match": false,
+      "r2": 0.9999638795852661,
+      "entropy": 1.7895961463525984,
+      "avg_gates": {
+        "gabor": 0.7394101321697235,
+        "legendre": 0.8310645222663879,
+        "chebyshev": 0.8395725786685944,
+        "hermite": 0.8560719192028046,
+        "fourier": 0.8496102392673492,
+        "relu": 0.9271875023841858
+      }
+    },
+    "quartic": {
+      "category": "polynomial",
+      "expected": "legendre",
+      "dominant": "relu",
+      "match": false,
+      "r2": 0.9999791383743286,
+      "entropy": 1.7894640882046629,
+      "avg_gates": {
+        "gabor": 0.7383584976196289,
+        "legendre": 0.8549492061138153,
+        "chebyshev": 0.8452941477298737,
+        "hermite": 0.8933529555797577,
+        "fourier": 0.886841893196106,
+        "relu": 0.9133419990539551
+      }
+    },
+    "poly_plus_sine": {
+      "category": "mixed",
+      "expected": "fourier",
+      "dominant": "relu",
+      "match": false,
+      "r2": 0.9999679327011108,
+      "entropy": 1.7891518561090485,
+      "avg_gates": {
+        "gabor": 0.7231681644916534,
+        "legendre": 0.8457697033882141,
+        "chebyshev": 0.8355900049209595,
+        "hermite": 0.8473776280879974,
+        "fourier": 0.8754877150058746,
+        "relu": 0.9215942323207855
+      }
+    },
+    "gaussian": {
+      "category": "localized",
+      "expected": "gabor",
+      "dominant": "relu",
+      "match": false,
+      "r2": 0.9999698996543884,
+      "entropy": 1.7900406501666648,
+      "avg_gates": {
+        "gabor": 0.7702459096908569,
+        "legendre": 0.8590480983257294,
+        "chebyshev": 0.8385714590549469,
+        "hermite": 0.8146440982818604,
+        "fourier": 0.8777412176132202,
+        "relu": 0.9291443526744843
+      }
+    },
+    "gabor_like": {
+      "category": "localized_oscillatory",
+      "expected": "gabor",
+      "dominant": "relu",
+      "match": false,
+      "r2": 0.9997134804725647,
+      "entropy": 1.7855007356628876,
+      "avg_gates": {
+        "gabor": 0.6564410030841827,
+        "legendre": 0.8798215985298157,
+        "chebyshev": 0.8210450708866119,
+        "hermite": 0.8282700181007385,
+        "fourier": 0.8260402679443359,
+        "relu": 0.9624436497688293
+      }
+    },
+    "smoothstep": {
+      "category": "nonlinear",
+      "expected": "relu",
+      "dominant": "relu",
+      "match": true,
+      "r2": 0.9999112486839294,
+      "entropy": 1.7888897715935272,
+      "avg_gates": {
+        "gabor": 0.7562528252601624,
+        "legendre": 0.8481233716011047,
+        "chebyshev": 0.8486814796924591,
+        "hermite": 0.8681732714176178,
+        "fourier": 0.8625188767910004,
+        "relu": 0.9806772470474243
+      }
+    },
+    "piecewise": {
+      "category": "piecewise",
+      "expected": "relu",
+      "dominant": "relu",
+      "match": true,
+      "r2": 0.9999438524246216,
+      "entropy": 1.7891276802115652,
+      "avg_gates": {
+        "gabor": 0.7425886988639832,
+        "legendre": 0.8403032720088959,
+        "chebyshev": 0.8600516319274902,
+        "hermite": 0.8683269619941711,
+        "fourier": 0.9044273495674133,
+        "relu": 0.9417869448661804
+      }
+    }
+  }
+}

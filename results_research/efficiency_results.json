@@ -1,0 +1,973 @@
+{
+  "timestamp": "2025-12-18T21:30:56.226743",
+  "results": {
+    "sine_wave": {
+      "relu_8": {
+        "n_params": 147,
+        "epochs_to_target": 251,
+        "final_r2": 0.9994466304779053,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[8]"
+      },
+      "fourier_8": {
+        "n_params": 324,
+        "epochs_to_target": 73,
+        "final_r2": 0.9999620914459229,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[8]"
+      },
+      "polynomial_8": {
+        "n_params": 204,
+        "epochs_to_target": 61,
+        "final_r2": 0.9999821186065674,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[8]"
+      },
+      "gabor_8": {
+        "n_params": 171,
+        "epochs_to_target": 81,
+        "final_r2": 0.999975860118866,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[8]"
+      },
+      "fourier+relu_8": {
+        "n_params": 437,
+        "epochs_to_target": 78,
+        "final_r2": 0.9999593496322632,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[8]"
+      },
+      "relu_16": {
+        "n_params": 419,
+        "epochs_to_target": 202,
+        "final_r2": 0.9997305870056152,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[16]"
+      },
+      "fourier_16": {
+        "n_params": 772,
+        "epochs_to_target": 48,
+        "final_r2": 0.9999772906303406,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[16]"
+      },
+      "polynomial_16": {
+        "n_params": 532,
+        "epochs_to_target": 61,
+        "final_r2": 0.9999856352806091,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[16]"
+      },
+      "gabor_16": {
+        "n_params": 467,
+        "epochs_to_target": 60,
+        "final_r2": 0.9999803900718689,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[16]"
+      },
+      "fourier+relu_16": {
+        "n_params": 1125,
+        "epochs_to_target": 75,
+        "final_r2": 0.9999628067016602,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[16]"
+      },
+      "relu_32": {
+        "n_params": 1347,
+        "epochs_to_target": 98,
+        "final_r2": 0.9999205470085144,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[32]"
+      },
+      "fourier_32": {
+        "n_params": 2052,
+        "epochs_to_target": 40,
+        "final_r2": 0.9999828338623047,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[32]"
+      },
+      "polynomial_32": {
+        "n_params": 1572,
+        "epochs_to_target": 32,
+        "final_r2": 0.9999894499778748,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[32]"
+      },
+      "gabor_32": {
+        "n_params": 1443,
+        "epochs_to_target": 46,
+        "final_r2": 0.9999822974205017,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[32]"
+      },
+      "fourier+relu_32": {
+        "n_params": 3269,
+        "epochs_to_target": 62,
+        "final_r2": 0.999973475933075,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[32]"
+      },
+      "relu_64": {
+        "n_params": 4739,
+        "epochs_to_target": 83,
+        "final_r2": 0.9999591112136841,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[64]"
+      },
+      "fourier_64": {
+        "n_params": 6148,
+        "epochs_to_target": 36,
+        "final_r2": 0.9999862313270569,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[64]"
+      },
+      "polynomial_64": {
+        "n_params": 5188,
+        "epochs_to_target": 33,
+        "final_r2": 0.9999935030937195,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[64]"
+      },
+      "gabor_64": {
+        "n_params": 4931,
+        "epochs_to_target": 34,
+        "final_r2": 0.9999909996986389,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[64]"
+      },
+      "fourier+relu_64": {
+        "n_params": 10629,
+        "epochs_to_target": 52,
+        "final_r2": 0.9999880790710449,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[64]"
+      },
+      "relu_32x16": {
+        "n_params": 2725,
+        "epochs_to_target": 63,
+        "final_r2": 0.9999514222145081,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[32, 16]"
+      },
+      "fourier_32x16": {
+        "n_params": 3287,
+        "epochs_to_target": 61,
+        "final_r2": 0.9999914765357971,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[32, 16]"
+      },
+      "polynomial_32x16": {
+        "n_params": 2567,
+        "epochs_to_target": 49,
+        "final_r2": 0.9999904632568359,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[32, 16]"
+      },
+      "gabor_32x16": {
+        "n_params": 4853,
+        "epochs_to_target": 43,
+        "final_r2": 0.9999893307685852,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[32, 16]"
+      },
+      "fourier+relu_32x16": {
+        "n_params": 5353,
+        "epochs_to_target": 69,
+        "final_r2": 0.9999828934669495,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[32, 16]"
+      },
+      "relu_64x32": {
+        "n_params": 10053,
+        "epochs_to_target": 84,
+        "final_r2": 0.9999710917472839,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[64, 32]"
+      },
+      "fourier_64x32": {
+        "n_params": 10151,
+        "epochs_to_target": 53,
+        "final_r2": 0.9999854564666748,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[64, 32]"
+      },
+      "polynomial_64x32": {
+        "n_params": 8711,
+        "epochs_to_target": 43,
+        "final_r2": 0.9999934434890747,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[64, 32]"
+      },
+      "gabor_64x32": {
+        "n_params": 18405,
+        "epochs_to_target": 35,
+        "final_r2": 0.9999964833259583,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[64, 32]"
+      },
+      "fourier+relu_64x32": {
+        "n_params": 17865,
+        "epochs_to_target": 69,
+        "final_r2": 0.9999887943267822,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[64, 32]"
+      }
+    },
+    "complex_periodic": {
+      "relu_8": {
+        "n_params": 147,
+        "epochs_to_target": null,
+        "final_r2": 0.9675760269165039,
+        "reached_target": false,
+        "basis": "relu",
+        "hidden_dims": "[8]"
+      },
+      "fourier_8": {
+        "n_params": 324,
+        "epochs_to_target": 276,
+        "final_r2": 0.9997552037239075,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[8]"
+      },
+      "polynomial_8": {
+        "n_params": 204,
+        "epochs_to_target": 250,
+        "final_r2": 0.995834231376648,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[8]"
+      },
+      "gabor_8": {
+        "n_params": 171,
+        "epochs_to_target": 253,
+        "final_r2": 0.9998325109481812,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[8]"
+      },
+      "fourier+relu_8": {
+        "n_params": 437,
+        "epochs_to_target": 214,
+        "final_r2": 0.9999361634254456,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[8]"
+      },
+      "relu_16": {
+        "n_params": 419,
+        "epochs_to_target": null,
+        "final_r2": 0.9875342845916748,
+        "reached_target": false,
+        "basis": "relu",
+        "hidden_dims": "[16]"
+      },
+      "fourier_16": {
+        "n_params": 772,
+        "epochs_to_target": 162,
+        "final_r2": 0.9997309446334839,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[16]"
+      },
+      "polynomial_16": {
+        "n_params": 532,
+        "epochs_to_target": 151,
+        "final_r2": 0.9999457001686096,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[16]"
+      },
+      "gabor_16": {
+        "n_params": 467,
+        "epochs_to_target": 335,
+        "final_r2": 0.9998882412910461,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[16]"
+      },
+      "fourier+relu_16": {
+        "n_params": 1125,
+        "epochs_to_target": 231,
+        "final_r2": 0.9997361302375793,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[16]"
+      },
+      "relu_32": {
+        "n_params": 1347,
+        "epochs_to_target": null,
+        "final_r2": 0.9724899530410767,
+        "reached_target": false,
+        "basis": "relu",
+        "hidden_dims": "[32]"
+      },
+      "fourier_32": {
+        "n_params": 2052,
+        "epochs_to_target": 174,
+        "final_r2": 0.9999592900276184,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[32]"
+      },
+      "polynomial_32": {
+        "n_params": 1572,
+        "epochs_to_target": 90,
+        "final_r2": 0.9999772310256958,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[32]"
+      },
+      "gabor_32": {
+        "n_params": 1443,
+        "epochs_to_target": 115,
+        "final_r2": 0.9999838471412659,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[32]"
+      },
+      "fourier+relu_32": {
+        "n_params": 3269,
+        "epochs_to_target": 359,
+        "final_r2": 0.9995807409286499,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[32]"
+      },
+      "relu_64": {
+        "n_params": 4739,
+        "epochs_to_target": null,
+        "final_r2": 0.7265534400939941,
+        "reached_target": false,
+        "basis": "relu",
+        "hidden_dims": "[64]"
+      },
+      "fourier_64": {
+        "n_params": 6148,
+        "epochs_to_target": 104,
+        "final_r2": 0.9999775290489197,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[64]"
+      },
+      "polynomial_64": {
+        "n_params": 5188,
+        "epochs_to_target": 74,
+        "final_r2": 0.9999924898147583,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[64]"
+      },
+      "gabor_64": {
+        "n_params": 4931,
+        "epochs_to_target": 86,
+        "final_r2": 0.9999726414680481,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[64]"
+      },
+      "fourier+relu_64": {
+        "n_params": 10629,
+        "epochs_to_target": 125,
+        "final_r2": 0.99997878074646,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[64]"
+      },
+      "relu_32x16": {
+        "n_params": 2725,
+        "epochs_to_target": 198,
+        "final_r2": 0.9989302158355713,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[32, 16]"
+      },
+      "fourier_32x16": {
+        "n_params": 3287,
+        "epochs_to_target": 60,
+        "final_r2": 0.999932587146759,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[32, 16]"
+      },
+      "polynomial_32x16": {
+        "n_params": 2567,
+        "epochs_to_target": 45,
+        "final_r2": 0.9999551773071289,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[32, 16]"
+      },
+      "gabor_32x16": {
+        "n_params": 4853,
+        "epochs_to_target": 82,
+        "final_r2": 0.9999646544456482,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[32, 16]"
+      },
+      "fourier+relu_32x16": {
+        "n_params": 5353,
+        "epochs_to_target": 75,
+        "final_r2": 0.9999263286590576,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[32, 16]"
+      },
+      "relu_64x32": {
+        "n_params": 10053,
+        "epochs_to_target": 131,
+        "final_r2": 0.9999114274978638,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[64, 32]"
+      },
+      "fourier_64x32": {
+        "n_params": 10151,
+        "epochs_to_target": 57,
+        "final_r2": 0.9999736547470093,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[64, 32]"
+      },
+      "polynomial_64x32": {
+        "n_params": 8711,
+        "epochs_to_target": 51,
+        "final_r2": 0.9999922513961792,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[64, 32]"
+      },
+      "gabor_64x32": {
+        "n_params": 18405,
+        "epochs_to_target": 56,
+        "final_r2": 0.9999920129776001,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[64, 32]"
+      },
+      "fourier+relu_64x32": {
+        "n_params": 17865,
+        "epochs_to_target": 77,
+        "final_r2": 0.9999702572822571,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[64, 32]"
+      }
+    },
+    "polynomial_4th": {
+      "relu_8": {
+        "n_params": 147,
+        "epochs_to_target": 142,
+        "final_r2": 0.9982650279998779,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[8]"
+      },
+      "fourier_8": {
+        "n_params": 324,
+        "epochs_to_target": 72,
+        "final_r2": 0.9999247789382935,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[8]"
+      },
+      "polynomial_8": {
+        "n_params": 204,
+        "epochs_to_target": 75,
+        "final_r2": 0.999953031539917,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[8]"
+      },
+      "gabor_8": {
+        "n_params": 171,
+        "epochs_to_target": 42,
+        "final_r2": 0.9999733567237854,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[8]"
+      },
+      "fourier+relu_8": {
+        "n_params": 437,
+        "epochs_to_target": 117,
+        "final_r2": 0.9998632073402405,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[8]"
+      },
+      "relu_16": {
+        "n_params": 419,
+        "epochs_to_target": 219,
+        "final_r2": 0.9995346069335938,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[16]"
+      },
+      "fourier_16": {
+        "n_params": 772,
+        "epochs_to_target": 56,
+        "final_r2": 0.9999900460243225,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[16]"
+      },
+      "polynomial_16": {
+        "n_params": 532,
+        "epochs_to_target": 49,
+        "final_r2": 0.9999879002571106,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[16]"
+      },
+      "gabor_16": {
+        "n_params": 467,
+        "epochs_to_target": 45,
+        "final_r2": 0.9999908208847046,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[16]"
+      },
+      "fourier+relu_16": {
+        "n_params": 1125,
+        "epochs_to_target": 70,
+        "final_r2": 0.9999846816062927,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[16]"
+      },
+      "relu_32": {
+        "n_params": 1347,
+        "epochs_to_target": 87,
+        "final_r2": 0.9993946552276611,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[32]"
+      },
+      "fourier_32": {
+        "n_params": 2052,
+        "epochs_to_target": 42,
+        "final_r2": 0.9999802112579346,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[32]"
+      },
+      "polynomial_32": {
+        "n_params": 1572,
+        "epochs_to_target": 58,
+        "final_r2": 0.9999848008155823,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[32]"
+      },
+      "gabor_32": {
+        "n_params": 1443,
+        "epochs_to_target": 41,
+        "final_r2": 0.9999922513961792,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[32]"
+      },
+      "fourier+relu_32": {
+        "n_params": 3269,
+        "epochs_to_target": 64,
+        "final_r2": 0.9999158978462219,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[32]"
+      },
+      "relu_64": {
+        "n_params": 4739,
+        "epochs_to_target": 84,
+        "final_r2": 0.9999305605888367,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[64]"
+      },
+      "fourier_64": {
+        "n_params": 6148,
+        "epochs_to_target": 40,
+        "final_r2": 0.9999868869781494,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[64]"
+      },
+      "polynomial_64": {
+        "n_params": 5188,
+        "epochs_to_target": 35,
+        "final_r2": 0.9999910593032837,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[64]"
+      },
+      "gabor_64": {
+        "n_params": 4931,
+        "epochs_to_target": 34,
+        "final_r2": 0.9999958872795105,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[64]"
+      },
+      "fourier+relu_64": {
+        "n_params": 10629,
+        "epochs_to_target": 55,
+        "final_r2": 0.9999901652336121,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[64]"
+      },
+      "relu_32x16": {
+        "n_params": 2725,
+        "epochs_to_target": 77,
+        "final_r2": 0.9999682307243347,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[32, 16]"
+      },
+      "fourier_32x16": {
+        "n_params": 3287,
+        "epochs_to_target": 52,
+        "final_r2": 0.9999613165855408,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[32, 16]"
+      },
+      "polynomial_32x16": {
+        "n_params": 2567,
+        "epochs_to_target": 67,
+        "final_r2": 0.9999507069587708,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[32, 16]"
+      },
+      "gabor_32x16": {
+        "n_params": 4853,
+        "epochs_to_target": 38,
+        "final_r2": 0.9999971985816956,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[32, 16]"
+      },
+      "fourier+relu_32x16": {
+        "n_params": 5353,
+        "epochs_to_target": 61,
+        "final_r2": 0.9999817609786987,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[32, 16]"
+      },
+      "relu_64x32": {
+        "n_params": 10053,
+        "epochs_to_target": 83,
+        "final_r2": 0.999975323677063,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[64, 32]"
+      },
+      "fourier_64x32": {
+        "n_params": 10151,
+        "epochs_to_target": 50,
+        "final_r2": 0.9999856352806091,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[64, 32]"
+      },
+      "polynomial_64x32": {
+        "n_params": 8711,
+        "epochs_to_target": 43,
+        "final_r2": 0.9999904036521912,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[64, 32]"
+      },
+      "gabor_64x32": {
+        "n_params": 18405,
+        "epochs_to_target": 40,
+        "final_r2": 0.999996542930603,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[64, 32]"
+      },
+      "fourier+relu_64x32": {
+        "n_params": 17865,
+        "epochs_to_target": 71,
+        "final_r2": 0.9999811053276062,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[64, 32]"
+      }
+    },
+    "damped_wave": {
+      "relu_8": {
+        "n_params": 147,
+        "epochs_to_target": null,
+        "final_r2": 0.9946803450584412,
+        "reached_target": false,
+        "basis": "relu",
+        "hidden_dims": "[8]"
+      },
+      "fourier_8": {
+        "n_params": 324,
+        "epochs_to_target": 161,
+        "final_r2": 0.9998318552970886,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[8]"
+      },
+      "polynomial_8": {
+        "n_params": 204,
+        "epochs_to_target": 80,
+        "final_r2": 0.9998354911804199,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[8]"
+      },
+      "gabor_8": {
+        "n_params": 171,
+        "epochs_to_target": 276,
+        "final_r2": 0.9969876408576965,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[8]"
+      },
+      "fourier+relu_8": {
+        "n_params": 437,
+        "epochs_to_target": 142,
+        "final_r2": 0.9998041391372681,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[8]"
+      },
+      "relu_16": {
+        "n_params": 419,
+        "epochs_to_target": null,
+        "final_r2": 0.9945557713508606,
+        "reached_target": false,
+        "basis": "relu",
+        "hidden_dims": "[16]"
+      },
+      "fourier_16": {
+        "n_params": 772,
+        "epochs_to_target": 81,
+        "final_r2": 0.9999154210090637,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[16]"
+      },
+      "polynomial_16": {
+        "n_params": 532,
+        "epochs_to_target": 63,
+        "final_r2": 0.999938428401947,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[16]"
+      },
+      "gabor_16": {
+        "n_params": 467,
+        "epochs_to_target": 87,
+        "final_r2": 0.999845564365387,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[16]"
+      },
+      "fourier+relu_16": {
+        "n_params": 1125,
+        "epochs_to_target": 140,
+        "final_r2": 0.9998977184295654,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[16]"
+      },
+      "relu_32": {
+        "n_params": 1347,
+        "epochs_to_target": null,
+        "final_r2": 0.9942712783813477,
+        "reached_target": false,
+        "basis": "relu",
+        "hidden_dims": "[32]"
+      },
+      "fourier_32": {
+        "n_params": 2052,
+        "epochs_to_target": 69,
+        "final_r2": 0.9999269843101501,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[32]"
+      },
+      "polynomial_32": {
+        "n_params": 1572,
+        "epochs_to_target": 40,
+        "final_r2": 0.9999596476554871,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[32]"
+      },
+      "gabor_32": {
+        "n_params": 1443,
+        "epochs_to_target": 247,
+        "final_r2": 0.9999536275863647,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[32]"
+      },
+      "fourier+relu_32": {
+        "n_params": 3269,
+        "epochs_to_target": 84,
+        "final_r2": 0.9999037981033325,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[32]"
+      },
+      "relu_64": {
+        "n_params": 4739,
+        "epochs_to_target": null,
+        "final_r2": 0.9261356592178345,
+        "reached_target": false,
+        "basis": "relu",
+        "hidden_dims": "[64]"
+      },
+      "fourier_64": {
+        "n_params": 6148,
+        "epochs_to_target": 49,
+        "final_r2": 0.9999434351921082,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[64]"
+      },
+      "polynomial_64": {
+        "n_params": 5188,
+        "epochs_to_target": 42,
+        "final_r2": 0.9999728798866272,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[64]"
+      },
+      "gabor_64": {
+        "n_params": 4931,
+        "epochs_to_target": 181,
+        "final_r2": 0.9998932480812073,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[64]"
+      },
+      "fourier+relu_64": {
+        "n_params": 10629,
+        "epochs_to_target": 68,
+        "final_r2": 0.999954342842102,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[64]"
+      },
+      "relu_32x16": {
+        "n_params": 2725,
+        "epochs_to_target": 199,
+        "final_r2": 0.9996402263641357,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[32, 16]"
+      },
+      "fourier_32x16": {
+        "n_params": 3287,
+        "epochs_to_target": 61,
+        "final_r2": 0.9998682141304016,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[32, 16]"
+      },
+      "polynomial_32x16": {
+        "n_params": 2567,
+        "epochs_to_target": 61,
+        "final_r2": 0.9999752640724182,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[32, 16]"
+      },
+      "gabor_32x16": {
+        "n_params": 4853,
+        "epochs_to_target": 93,
+        "final_r2": 0.9999773502349854,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[32, 16]"
+      },
+      "fourier+relu_32x16": {
+        "n_params": 5353,
+        "epochs_to_target": 75,
+        "final_r2": 0.9999670386314392,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[32, 16]"
+      },
+      "relu_64x32": {
+        "n_params": 10053,
+        "epochs_to_target": 90,
+        "final_r2": 0.9999412894248962,
+        "reached_target": true,
+        "basis": "relu",
+        "hidden_dims": "[64, 32]"
+      },
+      "fourier_64x32": {
+        "n_params": 10151,
+        "epochs_to_target": 69,
+        "final_r2": 0.9999650120735168,
+        "reached_target": true,
+        "basis": "fourier",
+        "hidden_dims": "[64, 32]"
+      },
+      "polynomial_64x32": {
+        "n_params": 8711,
+        "epochs_to_target": 47,
+        "final_r2": 0.9999917149543762,
+        "reached_target": true,
+        "basis": "polynomial",
+        "hidden_dims": "[64, 32]"
+      },
+      "gabor_64x32": {
+        "n_params": 18405,
+        "epochs_to_target": 72,
+        "final_r2": 0.9999613761901855,
+        "reached_target": true,
+        "basis": "gabor",
+        "hidden_dims": "[64, 32]"
+      },
+      "fourier+relu_64x32": {
+        "n_params": 17865,
+        "epochs_to_target": 65,
+        "final_r2": 0.999980092048645,
+        "reached_target": true,
+        "basis": "fourier+relu",
+        "hidden_dims": "[64, 32]"
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+
+================================================================================
+HYBRIDKAN RESEARCH EXPLORATION
+Finding where multi-basis activation functions provide value
+================================================================================
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 3060 Laptop GPU
+
+################################################################################
+# EXPERIMENT 1: SYNTHETIC FUNCTION FITTING
+# Testing on functions that NEED specific bases
+################################################################################
+
+--- Polynomial (cubic) ---
+  relu                           MSE: 11.633532  R2: -0.0000
+  all                            MSE: 11.635996  R2: -0.0002
+  fourier_relu                   MSE: 11.634126  R2: -0.0001
+  legendre_chebyshev_relu        MSE: 11.633519  R2: -0.0000
+  gabor_fourier                  MSE: 11.633505  R2: -0.0000
+  legendre_chebyshev_hermite     MSE: 11.633509  R2: -0.0000
+  fourier                        MSE: 11.633515  R2: -0.0000
+  gabor_legendre_fourier_relu    MSE: 11.633504  R2: 0.0000
+
+--- Sinusoidal (multi-frequency) ---
+  relu                           MSE: 0.653648  R2: -0.0000
+  all                            MSE: 0.653722  R2: -0.0001
+  fourier_relu                   MSE: 0.653648  R2: -0.0000
+  legendre_chebyshev_relu        MSE: 0.653648  R2: -0.0000
+  gabor_fourier                  MSE: 0.653648  R2: -0.0000
+  legendre_chebyshev_hermite     MSE: 0.653648  R2: -0.0000
+  fourier                        MSE: 0.653648  R2: -0.0000
+  gabor_legendre_fourier_relu    MSE: 0.653651  R2: -0.0000
+
+--- Gaussian Mixture ---
+  relu                           MSE: 0.112692  R2: -0.0000
+  all                            MSE: 0.112835  R2: -0.0013
+  fourier_relu                   MSE: 0.112694  R2: -0.0000
+  legendre_chebyshev_relu        MSE: 0.112692  R2: -0.0000
+  gabor_fourier                  MSE: 0.112692  R2: -0.0000
+  legendre_chebyshev_hermite     MSE: 0.112692  R2: -0.0000
+  fourier                        MSE: 0.112692  R2: -0.0000
+  gabor_legendre_fourier_relu    MSE: 0.112692  R2: -0.0000
+
+--- Mixed (poly+sin+gaussian) ---
+  relu                           MSE: 0.179768  R2: -0.0000
+  all                            MSE: 0.179792  R2: -0.0001
+  fourier_relu                   MSE: 0.179768  R2: -0.0000
+  legendre_chebyshev_relu        MSE: 0.179768  R2: -0.0000
+  gabor_fourier                  MSE: 0.179768  R2: -0.0000
+  legendre_chebyshev_hermite     MSE: 0.179772  R2: -0.0000
+  fourier                        MSE: 0.179770  R2: -0.0000
+  gabor_legendre_fourier_relu    MSE: 0.179768  R2: -0.0000
+
+--- High Frequency Damped ---
+  relu                           MSE: 0.081963  R2: -0.0000
+  all                            MSE: 0.081963  R2: -0.0000
+  fourier_relu                   MSE: 0.081963  R2: -0.0000
+  legendre_chebyshev_relu        MSE: 0.081963  R2: -0.0000
+  gabor_fourier                  MSE: 0.081963  R2: -0.0000
+  legendre_chebyshev_hermite     MSE: 0.081963  R2: -0.0000
+  fourier                        MSE: 0.081963  R2: -0.0000
+  gabor_legendre_fourier_relu    MSE: 0.081963  R2: -0.0000
+
+--- Step + Linear ---
+  relu                           MSE: 1.727334  R2: -0.0000
+  all                            MSE: 1.727334  R2: -0.0000
+  fourier_relu                   MSE: 1.727334  R2: -0.0000
+  legendre_chebyshev_relu        MSE: 1.727334  R2: -0.0000
+  gabor_fourier                  MSE: 1.727334  R2: -0.0000
+  legendre_chebyshev_hermite     MSE: 1.727334  R2: -0.0000
+  fourier                        MSE: 1.727334  R2: -0.0000
+  gabor_legendre_fourier_relu    MSE: 1.727335  R2: -0.0000
+
+################################################################################
+# EXPERIMENT 2: MULTIVARIATE COMPLEX FUNCTION
+################################################################################
+
+--- Multivariate Complex ---
+  relu                           MSE: 1.091838  R2: 0.0084
+  all                            MSE: 1.091913  R2: 0.0083
+  fourier_relu                   MSE: 1.091566  R2: 0.0087
+  legendre_chebyshev_relu        MSE: 1.094864  R2: 0.0057
+  gabor_fourier                  MSE: 1.094783  R2: 0.0057
+  legendre_chebyshev_hermite     MSE: 1.096067  R2: 0.0046
+  fourier                        MSE: 1.099116  R2: 0.0018
+  gabor_legendre_fourier_relu    MSE: 1.089891  R2: 0.0102
+
+################################################################################
+# EXPERIMENT 3: TABULAR CLASSIFICATION
+# Real-world datasets where features need complex transformations
+################################################################################
+
+--- Wine Classification ---
+  relu                           Accuracy: 100.00%
+  all                            Accuracy: 94.44%
+  fourier_relu                   Accuracy: 97.22%
+  legendre_chebyshev_relu        Accuracy: 97.22%
+  gabor_fourier                  Accuracy: 97.22%
+  legendre_chebyshev_hermite     Accuracy: 97.22%
+  fourier                        Accuracy: 97.22%
+  gabor_legendre_fourier_relu    Accuracy: 97.22%
+
+--- Iris Classification ---
+  relu                           Accuracy: 70.00%
+  all                            Accuracy: 76.67%
+  fourier_relu                   Accuracy: 76.67%
+  legendre_chebyshev_relu        Accuracy: 76.67%
+  gabor_fourier                  Accuracy: 80.00%
+  legendre_chebyshev_hermite     Accuracy: 80.00%
+  fourier                        Accuracy: 70.00%
+  gabor_legendre_fourier_relu    Accuracy: 80.00%
+
+--- Breast Cancer Classification ---
+  relu                           Accuracy: 95.61%
+  all                            Accuracy: 92.98%
+  fourier_relu                   Accuracy: 93.86%
+  legendre_chebyshev_relu        Accuracy: 94.74%
+  gabor_fourier                  Accuracy: 92.11%
+  legendre_chebyshev_hermite     Accuracy: 90.35%
+  fourier                        Accuracy: 94.74%
+  gabor_legendre_fourier_relu    Accuracy: 93.86%
+
+################################################################################
+# EXPERIMENT 4: ROBUSTNESS TO INPUT NOISE
+# Train clean, test noisy - which branches degrade gracefully?
+################################################################################
+
+--- Robustness: Sinusoidal (multi-frequency) ---
+  relu                      Clean: 0.6594  Noisy(0.5): 0.6594  Degradation: 1.00x
+  all                       Clean: 7.5717  Noisy(0.5): 7.5717  Degradation: 1.00x
+  fourier_relu              Clean: 0.6537  Noisy(0.5): 0.6537  Degradation: 1.00x
+  legendre_chebyshev_relu   Clean: 0.7232  Noisy(0.5): 0.7232  Degradation: 1.00x
+  gabor_fourier             Clean: 0.6537  Noisy(0.5): 0.6537  Degradation: 1.00x
+  legendre_chebyshev_hermite Clean: 0.6537  Noisy(0.5): 0.6537  Degradation: 1.00x
+  fourier                   Clean: 0.7637  Noisy(0.5): 0.7637  Degradation: 1.00x
+  gabor_legendre_fourier_relu Clean: 66.3147  Noisy(0.5): 66.3147  Degradation: 1.00x
+
+################################################################################
+# EXPERIMENT 5: FEW-SHOT GENERALIZATION
+# Can HybridKAN learn with less data?
+################################################################################
+
+--- Few-Shot: Mixed (poly+sin+gaussian) ---
+  relu                  n=50: 2.9396  n=100: 98.7426  n=200: 22.4930  n=500: 4.1295  n=1000: 0.2606
+  all                   n=50: 75.4425  n=100: 42.1805  n=200: 5.4648  n=500: 14.3162  n=1000: 0.4750
+  fourier_relu          n=50: 8.2849  n=100: 3.2238  n=200: 4.5839  n=500: 0.1868  n=1000: 0.9730
+  legendre_chebyshev_relu  n=50: 619.8334  n=100: 86.9558  n=200: 656.9379  n=500: 46.0247  n=1000: 2.1378
+  gabor_fourier         n=50: 93.9396  n=100: 6.3531  n=200: 23.5131  n=500: 33.0393  n=1000: 1.5240
+
+================================================================================
+RESEARCH EXPLORATION SUMMARY
+================================================================================

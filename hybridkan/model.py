@@ -343,8 +343,12 @@ class HybridKAN(nn.Module):
             self.cnn = None
             actual_input_dim = input_dim
         
-        # Input normalization
-        self.input_norm = nn.LayerNorm(actual_input_dim)
+        # Input normalization - skip LayerNorm for very low dimensional inputs (<=2)
+        # as it normalizes scalar/2D inputs to zero variance, killing all information
+        if actual_input_dim > 2:
+            self.input_norm = nn.LayerNorm(actual_input_dim)
+        else:
+            self.input_norm = nn.Identity()
         
         # Build hidden blocks
         self.blocks = nn.ModuleList()

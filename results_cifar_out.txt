@@ -1,0 +1,108 @@
+
+############################################################
+# RUNNING RELU BASELINE
+############################################################
+Files already downloaded and verified
+Files already downloaded and verified
+
+============================================================
+Running: cifar10_relu_baseline
+Strategy: Baseline (no enhancements)
+Branches: ['relu']
+Device: cuda
+Epochs: 100
+============================================================
+
+
+============================================================
+RESULTS: cifar10_relu_baseline
+============================================================
+Best Accuracy: 86.15%
+Best Epoch: 90
+Parameters: 364,240
+Gate Entropy: 0.000
+Inference Time: 3.15ms
+
+Comprehensive Metrics:
+  Macro Precision: 85.92%
+  Macro Recall: 85.95%
+  Macro F1: 85.92%
+  Top-3 Accuracy: 97.74%
+  Top-5 Accuracy: 99.37%
+
+############################################################
+# RUNNING HYBRIDKAN BASELINE
+############################################################
+Files already downloaded and verified
+Files already downloaded and verified
+
+============================================================
+Running: cifar10_all_baseline
+Strategy: Baseline (no enhancements)
+Branches: all
+Device: cuda
+Epochs: 100
+============================================================
+
+
+============================================================
+RESULTS: cifar10_all_baseline
+============================================================
+Best Accuracy: 85.56%
+Best Epoch: 84
+Parameters: 1,355,947
+Gate Entropy: 0.835
+Inference Time: 16.15ms
+
+Comprehensive Metrics:
+  Macro Precision: 85.38%
+  Macro Recall: 85.39%
+  Macro F1: 85.37%
+  Top-3 Accuracy: 97.42%
+  Top-5 Accuracy: 99.36%
+
+############################################################
+# RUNNING HYBRIDKAN + ENTROPY REG
+############################################################
+Files already downloaded and verified
+Files already downloaded and verified
+
+============================================================
+Running: cifar10_all_entropy_reg
+Strategy: Gate Entropy Regularization
+Branches: all
+Device: cuda
+Epochs: 100
+============================================================
+
+
+============================================================
+RESULTS: cifar10_all_entropy_reg
+============================================================
+Best Accuracy: 85.59%
+Best Epoch: 98
+Parameters: 1,355,947
+Gate Entropy: 0.865
+Inference Time: 14.04ms
+
+Comprehensive Metrics:
+  Macro Precision: 85.29%
+  Macro Recall: 85.32%
+  Macro F1: 85.29%
+  Top-3 Accuracy: 97.43%
+  Top-5 Accuracy: 99.37%
+
+############################################################
+# RUNNING HYBRIDKAN + EQUAL INIT
+############################################################
+Files already downloaded and verified
+Files already downloaded and verified
+
+============================================================
+Running: cifar10_all_equal_init
+Strategy: Equal Gate Initialization
+Branches: all
+Device: cuda
+Epochs: 100
+============================================================
+

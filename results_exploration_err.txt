@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Research\hybridkan_arxiv\scripts\research_exploration.py", line 848, in <module>
+    run_full_exploration()
+  File "C:\Users\user\Desktop\Research\hybridkan_arxiv\scripts\research_exploration.py", line 768, in run_full_exploration
+    print("\n\U0001f4ca KEY FINDINGS:\n")
+  File "C:\Users\user\anaconda3\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ca' in position 2: character maps to <undefined>

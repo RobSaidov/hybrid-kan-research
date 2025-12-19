@@ -1,0 +1,396 @@
+{
+  "timestamp": "2025-12-18T21:22:17.301121",
+  "results": {
+    "pure_sine": {
+      "best_config": "all",
+      "best_r2": 0.9997717539469401,
+      "expected_best": "fourier",
+      "results": {
+        "relu_only": {
+          "r2": 0.9562433163324991,
+          "mse": 0.04375669204940399,
+          "branches": [
+            "relu"
+          ]
+        },
+        "fourier_only": {
+          "r2": 0.9988784193992615,
+          "mse": 0.0011215718113817275,
+          "branches": [
+            "fourier"
+          ]
+        },
+        "polynomial": {
+          "r2": 0.9996100862820944,
+          "mse": 0.00038992152743351954,
+          "branches": [
+            "legendre",
+            "chebyshev"
+          ]
+        },
+        "gabor_hermite": {
+          "r2": 0.9995155135790507,
+          "mse": 0.00048448793434848386,
+          "branches": [
+            "gabor",
+            "hermite"
+          ]
+        },
+        "relu_fourier": {
+          "r2": 0.99903804063797,
+          "mse": 0.0009619522800979515,
+          "branches": [
+            "relu",
+            "fourier"
+          ]
+        },
+        "relu_polynomial": {
+          "r2": 0.9994420409202576,
+          "mse": 0.0005579538701567799,
+          "branches": [
+            "relu",
+            "legendre"
+          ]
+        },
+        "all": {
+          "r2": 0.9997717539469401,
+          "mse": 0.00022825590470650545,
+          "branches": [
+            "relu",
+            "fourier",
+            "legendre",
+            "chebyshev",
+            "hermite",
+            "gabor"
+          ]
+        }
+      }
+    },
+    "multi_freq": {
+      "best_config": "all",
+      "best_r2": 0.9995891650517782,
+      "expected_best": "fourier",
+      "results": {
+        "relu_only": {
+          "r2": 0.9893427491188049,
+          "mse": 0.010657258797436953,
+          "branches": [
+            "relu"
+          ]
+        },
+        "fourier_only": {
+          "r2": 0.9983648657798767,
+          "mse": 0.0016351321634526055,
+          "branches": [
+            "fourier"
+          ]
+        },
+        "polynomial": {
+          "r2": 0.9992167154947916,
+          "mse": 0.0007832920528016984,
+          "branches": [
+            "legendre",
+            "chebyshev"
+          ]
+        },
+        "gabor_hermite": {
+          "r2": 0.9993836879730225,
+          "mse": 0.0006163157134627303,
+          "branches": [
+            "gabor",
+            "hermite"
+          ]
+        },
+        "relu_fourier": {
+          "r2": 0.992104192574819,
+          "mse": 0.0078958198428154,
+          "branches": [
+            "relu",
+            "fourier"
+          ]
+        },
+        "relu_polynomial": {
+          "r2": 0.998481829961141,
+          "mse": 0.0015181735313187044,
+          "branches": [
+            "relu",
+            "legendre"
+          ]
+        },
+        "all": {
+          "r2": 0.9995891650517782,
+          "mse": 0.0004108325132013609,
+          "branches": [
+            "relu",
+            "fourier",
+            "legendre",
+            "chebyshev",
+            "hermite",
+            "gabor"
+          ]
+        }
+      }
+    },
+    "polynomial": {
+      "best_config": "polynomial",
+      "best_r2": 0.9997758269309998,
+      "expected_best": "legendre",
+      "results": {
+        "relu_only": {
+          "r2": 0.9873250126838684,
+          "mse": 0.01267498719971627,
+          "branches": [
+            "relu"
+          ]
+        },
+        "fourier_only": {
+          "r2": 0.9984394709269205,
+          "mse": 0.0015605352430914838,
+          "branches": [
+            "fourier"
+          ]
+        },
+        "polynomial": {
+          "r2": 0.9997758269309998,
+          "mse": 0.00022417660996628305,
+          "branches": [
+            "legendre",
+            "chebyshev"
+          ]
+        },
+        "gabor_hermite": {
+          "r2": 0.9989031553268433,
+          "mse": 0.0010968450418052573,
+          "branches": [
+            "gabor",
+            "hermite"
+          ]
+        },
+        "relu_fourier": {
+          "r2": 0.998287558555603,
+          "mse": 0.0017124375444836915,
+          "branches": [
+            "relu",
+            "fourier"
+          ]
+        },
+        "relu_polynomial": {
+          "r2": 0.9974445501963297,
+          "mse": 0.0025554354457805553,
+          "branches": [
+            "relu",
+            "legendre"
+          ]
+        },
+        "all": {
+          "r2": 0.9995737671852112,
+          "mse": 0.00042623334350840497,
+          "branches": [
+            "relu",
+            "fourier",
+            "legendre",
+            "chebyshev",
+            "hermite",
+            "gabor"
+          ]
+        }
+      }
+    },
+    "gaussian_bump": {
+      "best_config": "all",
+      "best_r2": 0.9998780290285746,
+      "expected_best": "gabor",
+      "results": {
+        "relu_only": {
+          "r2": 0.9988129933675131,
+          "mse": 0.0011870143158982198,
+          "branches": [
+            "relu"
+          ]
+        },
+        "fourier_only": {
+          "r2": 0.9986020723978678,
+          "mse": 0.0013979295811926324,
+          "branches": [
+            "fourier"
+          ]
+        },
+        "polynomial": {
+          "r2": 0.9998217026392618,
+          "mse": 0.00017830148378076652,
+          "branches": [
+            "legendre",
+            "chebyshev"
+          ]
+        },
+        "gabor_hermite": {
+          "r2": 0.9994270006815592,
+          "mse": 0.0005730111636997511,
+          "branches": [
+            "gabor",
+            "hermite"
+          ]
+        },
+        "relu_fourier": {
+          "r2": 0.9995864431063334,
+          "mse": 0.0004135741716405998,
+          "branches": [
+            "relu",
+            "fourier"
+          ]
+        },
+        "relu_polynomial": {
+          "r2": 0.9993553558985392,
+          "mse": 0.0006446429373075565,
+          "branches": [
+            "relu",
+            "legendre"
+          ]
+        },
+        "all": {
+          "r2": 0.9998780290285746,
+          "mse": 0.00012197210162412375,
+          "branches": [
+            "relu",
+            "fourier",
+            "legendre",
+            "chebyshev",
+            "hermite",
+            "gabor"
+          ]
+        }
+      }
+    },
+    "damped_oscillation": {
+      "best_config": "relu_polynomial",
+      "best_r2": 0.9969915548960367,
+      "expected_best": "gabor",
+      "results": {
+        "relu_only": {
+          "r2": 0.9430139064788818,
+          "mse": 0.05698609724640846,
+          "branches": [
+            "relu"
+          ]
+        },
+        "fourier_only": {
+          "r2": 0.9859501520792643,
+          "mse": 0.014049860027929148,
+          "branches": [
+            "fourier"
+          ]
+        },
+        "polynomial": {
+          "r2": 0.9956110517183939,
+          "mse": 0.0043889430817216635,
+          "branches": [
+            "legendre",
+            "chebyshev"
+          ]
+        },
+        "gabor_hermite": {
+          "r2": 0.99490753809611,
+          "mse": 0.005092476184169452,
+          "branches": [
+            "gabor",
+            "hermite"
+          ]
+        },
+        "relu_fourier": {
+          "r2": 0.9907456835110983,
+          "mse": 0.009254332166165113,
+          "branches": [
+            "relu",
+            "fourier"
+          ]
+        },
+        "relu_polynomial": {
+          "r2": 0.9969915548960367,
+          "mse": 0.0030084569783260426,
+          "branches": [
+            "relu",
+            "legendre"
+          ]
+        },
+        "all": {
+          "r2": 0.9967154264450073,
+          "mse": 0.0032845609433328113,
+          "branches": [
+            "relu",
+            "fourier",
+            "legendre",
+            "chebyshev",
+            "hermite",
+            "gabor"
+          ]
+        }
+      }
+    },
+    "step_like": {
+      "best_config": "fourier_only",
+      "best_r2": 0.999948779741923,
+      "expected_best": "relu",
+      "results": {
+        "relu_only": {
+          "r2": 0.9998075763384501,
+          "mse": 0.00019243503629695624,
+          "branches": [
+            "relu"
+          ]
+        },
+        "fourier_only": {
+          "r2": 0.999948779741923,
+          "mse": 5.121987730187053e-05,
+          "branches": [
+            "fourier"
+          ]
+        },
+        "polynomial": {
+          "r2": 0.9999380111694336,
+          "mse": 6.199091876624152e-05,
+          "branches": [
+            "legendre",
+            "chebyshev"
+          ]
+        },
+        "gabor_hermite": {
+          "r2": 0.9996781746546427,
+          "mse": 0.0003218259322845067,
+          "branches": [
+            "gabor",
+            "hermite"
+          ]
+        },
+        "relu_fourier": {
+          "r2": 0.9999071955680847,
+          "mse": 9.279835285269655e-05,
+          "branches": [
+            "relu",
+            "fourier"
+          ]
+        },
+        "relu_polynomial": {
+          "r2": 0.9999248385429382,
+          "mse": 7.516960613429546e-05,
+          "branches": [
+            "relu",
+            "legendre"
+          ]
+        },
+        "all": {
+          "r2": 0.9998628894488016,
+          "mse": 0.0001371051300035712,
+          "branches": [
+            "relu",
+            "fourier",
+            "legendre",
+            "chebyshev",
+            "hermite",
+            "gabor"
+          ]
+        }
+      }
+    }
+  },
+  "prediction_accuracy": 0.5
+}
