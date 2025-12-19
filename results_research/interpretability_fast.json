@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-12-19T01:17:02.671360",
+  "accuracy": 25.0,
+  "results": {
+    "pure_cosine": {
+      "expected": "fourier",
+      "actual_dominant": "relu",
+      "match": false,
+      "r2": 0.9998753666877747,
+      "gates": {
+        "relu": 0.9666930139064789,
+        "fourier": 0.9215748310089111,
+        "legendre": 0.9138329029083252,
+        "gabor": 0.7688259482383728
+      },
+      "reason": "Pure periodic \u2192 Fourier"
+    },
+    "polynomial_cubic": {
+      "expected": "legendre",
+      "actual_dominant": "relu",
+      "match": false,
+      "r2": 0.9999822974205017,
+      "gates": {
+        "relu": 0.9475996494293213,
+        "fourier": 0.8769533336162567,
+        "legendre": 0.8979104459285736,
+        "gabor": 0.7761436104774475
+      },
+      "reason": "Polynomial \u2192 Legendre/Chebyshev"
+    },
+    "gaussian_bell": {
+      "expected": "gabor",
+      "actual_dominant": "relu",
+      "match": false,
+      "r2": 0.9999914765357971,
+      "gates": {
+        "relu": 0.960256040096283,
+        "fourier": 0.9101971089839935,
+        "legendre": 0.8873623907566071,
+        "gabor": 0.7908025681972504
+      },
+      "reason": "Gaussian \u2192 Gabor/Hermite"
+    },
+    "relu_like": {
+      "expected": "relu",
+      "actual_dominant": "relu",
+      "match": true,
+      "r2": 0.9999932646751404,
+      "gates": {
+        "relu": 0.9487566947937012,
+        "fourier": 0.8812128901481628,
+        "legendre": 0.896388977766037,
+        "gabor": 0.7739287912845612
+      },
+      "reason": "Piecewise linear \u2192 ReLU"
+    }
+  }
+}

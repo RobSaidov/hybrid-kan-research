@@ -1,8 +1,8 @@
 {
   "dataset": "cifar10",
-  "relu_accuracy": 80.23,
-  "best_hybrid_accuracy": 77.31,
+  "relu_accuracy": 86.15,
+  "best_hybrid_accuracy": 85.67,
   "best_hybrid_strategy": "hybrid_equal_init",
   "beat_relu": false,
-  "difference": -2.9200000000000017
+  "difference": -0.480000000000004
 }

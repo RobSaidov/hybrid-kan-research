@@ -106,3 +106,71 @@ Device: cuda
 Epochs: 100
 ============================================================
 
+
+============================================================
+RESULTS: cifar10_all_equal_init
+============================================================
+Best Accuracy: 85.67%
+Best Epoch: 97
+Parameters: 1,355,947
+Gate Entropy: 0.814
+Inference Time: 23.75ms
+
+Comprehensive Metrics:
+  Macro Precision: 85.46%
+  Macro Recall: 85.45%
+  Macro F1: 85.44%
+  Top-3 Accuracy: 97.28%
+  Top-5 Accuracy: 99.37%
+
+############################################################
+# RUNNING HYBRIDKAN + ALL STRATEGIES
+############################################################
+Files already downloaded and verified
+Files already downloaded and verified
+
+============================================================
+Running: cifar10_all_all_strategies
+Strategy: All Strategies Combined
+Branches: all
+Device: cuda
+Epochs: 100
+============================================================
+
+
+============================================================
+RESULTS: cifar10_all_all_strategies
+============================================================
+Best Accuracy: 85.59%
+Best Epoch: 88
+Parameters: 1,355,947
+Gate Entropy: 0.865
+Inference Time: 13.82ms
+
+Comprehensive Metrics:
+  Macro Precision: 85.11%
+  Macro Recall: 85.08%
+  Macro F1: 85.07%
+  Top-3 Accuracy: 97.20%
+  Top-5 Accuracy: 99.34%
+
+================================================================================
+FINAL COMPARISON SUMMARY
+================================================================================
+
+Experiment                       Accuracy    Gate Entropy       Params
+--------------------------------------------------------------------------------
+relu_baseline                      86.15%          0.000      364,240
+hybrid_baseline                    85.56%          0.835    1,355,947
+hybrid_entropy                     85.59%          0.865    1,355,947
+hybrid_equal_init                  85.67%          0.814    1,355,947
+hybrid_all_strategies              85.59%          0.865    1,355,947
+
+================================================================================
+ReLU still wins by 0.48%
+Suggestions:
+  1. Try longer training (more epochs)
+  2. Increase entropy regularization weight
+  3. Try different branch combinations
+  4. Adjust learning rate for gates
+================================================================================
