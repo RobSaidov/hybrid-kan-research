@@ -1,0 +1,13 @@
+Dataset,Task,Model,R2,MSE
+pure_sine,Regression,"HybridKAN (with norm, gates, dedup)",0.9997717539469401,0.00022825590470650545
+pure_sine,Regression,ReLU Only,0.9562433163324991,0.04375669204940399
+multi_freq,Regression,"HybridKAN (with norm, gates, dedup)",0.9995891650517782,0.0004108325132013609
+multi_freq,Regression,ReLU Only,0.9893427491188049,0.010657258797436953
+polynomial,Regression,"HybridKAN (with norm, gates, dedup)",0.9995737671852112,0.00042623334350840497
+polynomial,Regression,ReLU Only,0.9873250126838684,0.01267498719971627
+gaussian_bump,Regression,"HybridKAN (with norm, gates, dedup)",0.9998780290285746,0.00012197210162412375
+gaussian_bump,Regression,ReLU Only,0.9988129933675131,0.0011870143158982198
+damped_oscillation,Regression,"HybridKAN (with norm, gates, dedup)",0.9967154264450073,0.0032845609433328113
+damped_oscillation,Regression,ReLU Only,0.9430139064788818,0.05698609724640846
+step_like,Regression,"HybridKAN (with norm, gates, dedup)",0.9998628894488016,0.0001371051300035712
+step_like,Regression,ReLU Only,0.9998075763384501,0.00019243503629695624

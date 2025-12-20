@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-12-20T12:22:58.263282",
+  "analysis_type": "Old vs New Code Comparison",
+  "findings": {
+    "normalization": {
+      "description": "Per-branch LayerNorm + post-concat BatchNorm",
+      "fix_applied": "LayerNorm skipped for dim<=2 inputs (regression fix)",
+      "effect": "Prevents scalar inputs from being normalized to zero variance"
+    },
+    "gates": {
+      "description": "Learnable scalar gates per branch",
+      "implementation": "softplus(alpha) * branch_output",
+      "benefit": "Adaptive branch importance weighting"
+    },
+    "deduplication": {
+      "description": "Polynomial degree de-duplication",
+      "implementation": "Different start_degree for Legendre/Chebyshev/Hermite",
+      "benefit": "Reduces redundant degree-0/1 terms across polynomial families"
+    },
+    "residual_effect": {
+      "CIFAR-10": "+0.46% with residual (85.63% vs 85.17%)",
+      "MNIST": "+0.08% with residual (99.44% vs 99.36%)"
+    }
+  },
+  "model_features_new_code": [
+    "Per-branch LayerNorm (conditional on input dim)",
+    "Learnable BranchGate (softplus-based)",
+    "Learnable ResidualGate (sigmoid-based)",
+    "Polynomial degree de-duplication",
+    "GELU activation after concatenation",
+    "Dropout for regularization",
+    "Optional CNN preprocessing for images"
+  ]
+}

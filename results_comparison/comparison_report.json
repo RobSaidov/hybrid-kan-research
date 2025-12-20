@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-12-20T12:19:30.279373",
+  "summary": {
+    "total_datasets_analyzed": 13,
+    "datasets_where_all_wins": 3
+  },
+  "files_created": [
+    "C:\\Users\\user\\Desktop\\Research\\hybridkan_arxiv\\results_comparison\\best_activation_per_dataset.csv",
+    "C:\\Users\\user\\Desktop\\Research\\hybridkan_arxiv\\results_comparison\\classification_comparison.csv",
+    "C:\\Users\\user\\Desktop\\Research\\hybridkan_arxiv\\results_comparison\\regression_comparison.csv",
+    "C:\\Users\\user\\Desktop\\Research\\hybridkan_arxiv\\results_comparison\\all_vs_single_activations.csv"
+  ]
+}

@@ -1,0 +1,18 @@
+Dataset,Activation_Config,Branches,Test_Accuracy,Parameters,Use_Residual,Source
+CIFAR-10,relu_only,relu,86.15,364240,True,results/cifar10
+CIFAR-10,all_except_gabor,"legendre, chebyshev, hermite, fourier, relu",85.76,735656,True,results/cifar10
+CIFAR-10,all_branches,"gabor, legendre, chebyshev, hermite, fourier, relu",85.63,1355947,True,results/cifar10
+CIFAR-10,all_except_legendre,"gabor, chebyshev, hermite, fourier, relu",85.56,1264101,True,results/cifar10
+CIFAR-10,all_except_relu,"gabor, legendre, chebyshev, hermite, fourier",85.5,1161192,True,results/cifar10
+CIFAR-10,all_except_hermite,"gabor, legendre, chebyshev, fourier, relu",85.44,1265893,True,results/cifar10
+CIFAR-10,all_except_fourier,"gabor, legendre, chebyshev, hermite, relu",85.39,1257381,True,results/cifar10
+CIFAR-10,all_except_chebyshev,"gabor, legendre, hermite, fourier, relu",85.37,1264997,True,results/cifar10
+CIFAR-10,all_no_residual,"gabor, legendre, chebyshev, hermite, fourier, relu",85.17,1314792,False,results/cifar10
+CIFAR10,relu_baseline,see v2 config,86.15,0,True,results_v2
+CIFAR10,all_equal_init,see v2 config,85.67,0,True,results_v2
+CIFAR10,all_all_strategies,see v2 config,85.59,0,True,results_v2
+CIFAR10,all_entropy_reg,see v2 config,85.59,0,True,results_v2
+CIFAR10,all_baseline,see v2 config,85.56,0,True,results_v2
+MNIST,relu_only,relu,99.5,363664,True,results/mnist
+MNIST,all_branches,"gabor, legendre, chebyshev, hermite, fourier, relu",99.44,1355371,True,results/mnist
+MNIST,all_no_residual,"gabor, legendre, chebyshev, hermite, fourier, relu",99.36,1314216,False,results/mnist

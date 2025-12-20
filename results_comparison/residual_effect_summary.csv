@@ -1,0 +1,3 @@
+Dataset,With_Residual,Without_Residual,Residual_Effect
+CIFAR10,85.63,85.17,0.45999999999999375
+MNIST,99.44,99.36,0.0799999999999983

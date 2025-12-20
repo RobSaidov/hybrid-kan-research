@@ -1,0 +1,14 @@
+Dataset,Task_Type,Best_Activation,Best_Branches,Metric,Value,All_Beat_Others,Source
+CIFAR-10,Classification,relu_only,relu,Accuracy,86.15,False,results/cifar10
+CIFAR10,Classification,relu_baseline,see v2 config,Accuracy,86.15,False,results_v2
+MNIST,Classification,relu_only,relu,Accuracy,99.5,False,results/mnist
+complex_periodic_efficiency,Regression,polynomial_64,polynomial,R2,0.9999924898147583,False,efficiency
+damped_oscillation,Regression,relu_polynomial,"relu, legendre",R2,0.9969915548960367,False,basis_selection
+damped_wave_efficiency,Regression,polynomial_64x32,polynomial,R2,0.9999917149543762,False,efficiency
+gaussian_bump,Regression,all,"relu, fourier, legendre, chebyshev, hermite, gabor",R2,0.9998780290285746,True,basis_selection
+multi_freq,Regression,all,"relu, fourier, legendre, chebyshev, hermite, gabor",R2,0.9995891650517782,True,basis_selection
+polynomial,Regression,polynomial,"legendre, chebyshev",R2,0.9997758269309998,False,basis_selection
+polynomial_4th_efficiency,Regression,gabor_32x16,gabor,R2,0.9999971985816956,False,efficiency
+pure_sine,Regression,all,"relu, fourier, legendre, chebyshev, hermite, gabor",R2,0.9997717539469401,True,basis_selection
+sine_wave_efficiency,Regression,gabor_64x32,gabor,R2,0.9999964833259583,False,efficiency
+step_like,Regression,fourier_only,fourier,R2,0.999948779741923,False,basis_selection

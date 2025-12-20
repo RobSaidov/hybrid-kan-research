@@ -1,0 +1,5 @@
+Dataset,Configuration,Accuracy,Parameters,Has_Residual
+CIFAR10,All Branches (with residual),85.63,1355947,True
+CIFAR10,All Branches (no residual),85.17,1314792,False
+MNIST,All Branches (with residual),99.44,1355371,True
+MNIST,All Branches (no residual),99.36,1314216,False

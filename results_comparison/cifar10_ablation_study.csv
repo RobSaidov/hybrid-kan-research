@@ -1,0 +1,10 @@
+Configuration,Branches,Accuracy,Parameters,Use_Residual,Epochs,Training_Time_Hours,Delta_From_All
+relu_only,relu,86.15,364240,True,100,0.9103783835967382,0.5200000000000102
+all_except_gabor,"legendre, chebyshev, hermite, fourier, relu",85.76,735656,True,100,1.90838136030568,0.13000000000000966
+all_branches,"gabor, legendre, chebyshev, hermite, fourier, relu",85.63,1355947,True,100,2.1152392950985166,0.0
+all_except_legendre,"gabor, chebyshev, hermite, fourier, relu",85.56,1264101,True,100,1.8018077116542393,-0.06999999999999318
+all_except_relu,"gabor, legendre, chebyshev, hermite, fourier",85.5,1161192,True,100,2.039059786664115,-0.12999999999999545
+all_except_hermite,"gabor, legendre, chebyshev, fourier, relu",85.44,1265893,True,100,1.8815271598100662,-0.18999999999999773
+all_except_fourier,"gabor, legendre, chebyshev, hermite, relu",85.39,1257381,True,100,1.823752960364024,-0.23999999999999488
+all_except_chebyshev,"gabor, legendre, hermite, fourier, relu",85.37,1264997,True,100,1.8616537530554667,-0.2599999999999909
+all_no_residual,"gabor, legendre, chebyshev, hermite, fourier, relu",85.17,1314792,False,100,2.068239393962754,-0.45999999999999375
